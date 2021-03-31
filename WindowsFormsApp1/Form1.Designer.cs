@@ -94,11 +94,14 @@
             this.cprev = new System.Windows.Forms.Button();
             this.a41 = new System.Windows.Forms.TextBox();
             this.Trioe = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.alterarPreçoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -143,14 +146,13 @@
             // 
             // b1
             // 
-            this.b1.Location = new System.Drawing.Point(96, 256);
+            this.b1.Location = new System.Drawing.Point(96, 244);
             this.b1.Name = "b1";
-            this.b1.Size = new System.Drawing.Size(107, 35);
+            this.b1.Size = new System.Drawing.Size(107, 26);
             this.b1.TabIndex = 4;
             this.b1.Text = "Calcular / 2";
             this.b1.UseVisualStyleBackColor = true;
             this.b1.Click += new System.EventHandler(this.Calcular_Click);
-            
             // 
             // label1
             // 
@@ -192,10 +194,10 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 1);
+            this.tabControl1.Location = new System.Drawing.Point(0, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(302, 328);
+            this.tabControl1.Size = new System.Drawing.Size(302, 302);
             this.tabControl1.TabIndex = 10;
             this.tabControl1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.lolazum_KeyUp);
             // 
@@ -219,7 +221,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(294, 302);
+            this.tabPage1.Size = new System.Drawing.Size(294, 276);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Zeiss";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -292,7 +294,7 @@
             this.tabPage3.Controls.Add(this.button11);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(294, 302);
+            this.tabPage3.Size = new System.Drawing.Size(294, 276);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Rodenstock";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -326,9 +328,9 @@
             // 
             // b2
             // 
-            this.b2.Location = new System.Drawing.Point(97, 256);
+            this.b2.Location = new System.Drawing.Point(96, 245);
             this.b2.Name = "b2";
-            this.b2.Size = new System.Drawing.Size(107, 35);
+            this.b2.Size = new System.Drawing.Size(107, 28);
             this.b2.TabIndex = 20;
             this.b2.Text = "Calcular / 2";
             this.b2.UseVisualStyleBackColor = true;
@@ -450,7 +452,7 @@
             this.tabPage4.Controls.Add(this.Clean);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(294, 302);
+            this.tabPage4.Size = new System.Drawing.Size(294, 276);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Hoya";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -458,9 +460,9 @@
             // 
             // b3
             // 
-            this.b3.Location = new System.Drawing.Point(97, 253);
+            this.b3.Location = new System.Drawing.Point(97, 245);
             this.b3.Name = "b3";
-            this.b3.Size = new System.Drawing.Size(100, 38);
+            this.b3.Size = new System.Drawing.Size(100, 26);
             this.b3.TabIndex = 32;
             this.b3.Text = "Calcular / 2";
             this.b3.UseVisualStyleBackColor = true;
@@ -610,7 +612,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(294, 302);
+            this.tabPage2.Size = new System.Drawing.Size(294, 276);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Essilor";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -643,9 +645,9 @@
             // 
             // b4
             // 
-            this.b4.Location = new System.Drawing.Point(94, 256);
+            this.b4.Location = new System.Drawing.Point(93, 241);
             this.b4.Name = "b4";
-            this.b4.Size = new System.Drawing.Size(107, 35);
+            this.b4.Size = new System.Drawing.Size(107, 29);
             this.b4.TabIndex = 20;
             this.b4.Text = "Calcular / 2";
             this.b4.UseVisualStyleBackColor = true;
@@ -749,6 +751,22 @@
             this.Trioe.UseVisualStyleBackColor = true;
             this.Trioe.Click += new System.EventHandler(this.button23_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alterarPreçoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(300, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // alterarPreçoToolStripMenuItem
+            // 
+            this.alterarPreçoToolStripMenuItem.Name = "alterarPreçoToolStripMenuItem";
+            this.alterarPreçoToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.alterarPreçoToolStripMenuItem.Text = "Alterar Preço";
+            // 
             // Painel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -758,6 +776,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(300, 326);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -766,6 +785,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Horizon";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Painel_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -775,7 +795,10 @@
             this.tabPage4.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -846,6 +869,8 @@
         private System.Windows.Forms.TextBox a41;
         private System.Windows.Forms.Button Trioe;
         private System.Windows.Forms.Button b3;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem alterarPreçoToolStripMenuItem;
     }
 }
 

@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -25,10 +17,10 @@ namespace WindowsFormsApp1
             resl1 = ch / 2;
             co = ch;
             textBox2.Text = Convert.ToString(resl1);
-            textBox3.Text = Convert.ToString(co + 330);
-            textBox4.Text = Convert.ToString(co + 550);
-            textBox5.Text = Convert.ToString(co + 700);
-            textBox6.Text = Convert.ToString(co + 750);
+            textBox3.Text = Convert.ToString(co + 300);
+            textBox4.Text = Convert.ToString(co + 630);
+            textBox5.Text = Convert.ToString(co + 850);
+            textBox6.Text = Convert.ToString(co + 850);
             c2 = resl1 * 2;
             textBox7.Text = Convert.ToString(ch);
             Clipboard.SetText(textBox2.Text);
@@ -39,11 +31,11 @@ namespace WindowsFormsApp1
         {
             float bp, resl4, co;
             bp = float.Parse(textBox1.Text);
-            resl4 = (bp - 750) / 2;
+            resl4 = (bp - 850) / 2;
             textBox2.Text = Convert.ToString(resl4);
-            textBox3.Text = Convert.ToString((bp - 750) + 330);
-            textBox4.Text = Convert.ToString((bp - 750) + 550);
-            textBox5.Text = Convert.ToString((bp - 750) + 700);
+            textBox3.Text = Convert.ToString((bp - 850) + 300);
+            textBox4.Text = Convert.ToString((bp - 850) + 630);
+            textBox5.Text = Convert.ToString((bp - 850) + 850);
             textBox6.Text = Convert.ToString(bp);
             co = resl4 * 2;
             textBox7.Text = Convert.ToString(co);
@@ -54,12 +46,12 @@ namespace WindowsFormsApp1
         {
             float pl, resl3, co;
             pl = float.Parse(textBox1.Text);
-            resl3 = (pl - 700) / 2;
+            resl3 = (pl - 850) / 2;
             textBox2.Text = Convert.ToString(resl3);
-            textBox3.Text = Convert.ToString((pl - 700) + 330);
-            textBox4.Text = Convert.ToString((pl - 700) + 550);
+            textBox3.Text = Convert.ToString((pl - 850) + 300);
+            textBox4.Text = Convert.ToString((pl - 850) + 630);
             textBox5.Text = Convert.ToString(pl);
-            textBox6.Text = Convert.ToString((pl - 700) + 750);
+            textBox6.Text = Convert.ToString((pl - 850) + 850);
             co = resl3 * 2;
             textBox7.Text = Convert.ToString(co);
             Clipboard.SetText(textBox2.Text);
@@ -69,12 +61,12 @@ namespace WindowsFormsApp1
         {
             float si, resl2, co;
             si = float.Parse(textBox1.Text);
-            resl2 = (si - 550) / 2;
+            resl2 = (si - 630) / 2;
             textBox2.Text = Convert.ToString(resl2);
-            textBox3.Text = Convert.ToString((si - 550) + 330);
+            textBox3.Text = Convert.ToString((si - 630 )+ 300);
             textBox4.Text = Convert.ToString(si);
-            textBox5.Text = Convert.ToString((si - 550) + 700);
-            textBox6.Text = Convert.ToString((si - 550) + 750);
+            textBox5.Text = Convert.ToString((si - 630) + 850);
+            textBox6.Text = Convert.ToString((si - 630) + 850);
             co = resl2 * 2;
             textBox7.Text = Convert.ToString(co);
             Clipboard.SetText(textBox2.Text);
@@ -84,13 +76,13 @@ namespace WindowsFormsApp1
         {
             float ch, resl1, co, c2;
             ch = float.Parse(textBox1.Text);
-            resl1 = (ch - 330) / 2;
-            co = ch - 330;
+            resl1 = (ch - 300) / 2;
+            co = ch - 300;
             textBox2.Text = Convert.ToString(resl1);
             textBox3.Text = Convert.ToString(ch);
-            textBox4.Text = Convert.ToString(co + 550);
-            textBox5.Text = Convert.ToString(co + 700);
-            textBox6.Text = Convert.ToString(co + 750);
+            textBox4.Text = Convert.ToString(co + 630);
+            textBox5.Text = Convert.ToString(co + 850);
+            textBox6.Text = Convert.ToString(co + 850);
             c2 = resl1 * 2;
             textBox7.Text = Convert.ToString(c2);
             Clipboard.SetText(textBox2.Text);
@@ -108,7 +100,7 @@ namespace WindowsFormsApp1
             co = resl * 2;
             textBox8.Text = Convert.ToString(co);
             Clipboard.SetText(textBox9.Text);
-            this.AcceptButton = b2;
+            AcceptButton = b2;
         }
         private void button10_Click(object sender, EventArgs e)
         {
@@ -186,10 +178,10 @@ namespace WindowsFormsApp1
         private void button17_Click(object sender, EventArgs e)
         {
             double resl4, CE, No, Nobc, BClong, VCHoya, v;
-            CE = 196.90;
-            No = 548.90;
-            Nobc = 548.90;
-            BClong = 886.60;
+            CE = 280;
+            No = 700;
+            Nobc = 700;
+            BClong = 1150;
             v = CE;
             VCHoya = double.Parse(VCHoyatext.Text);
             resl4 = (VCHoya - v) / 2;
@@ -204,10 +196,10 @@ namespace WindowsFormsApp1
         private void BCLong_Click(object sender, EventArgs e)
         {
             double resl4, CE, No, Nobc, BClong, VCHoya, v;
-            CE = 196.90;
-            No = 548.90;
-            Nobc = 548.90;
-            BClong = 886.60;
+            CE = 280;
+            No = 700;
+            Nobc = 700;
+            BClong = 1150;
             v = BClong;
             VCHoya = double.Parse(VCHoyatext.Text);
             resl4 = (VCHoya - v) / 2;
@@ -223,10 +215,10 @@ namespace WindowsFormsApp1
         private void NoBC_Click(object sender, EventArgs e)
         {
             double resl4, CE, No, Nobc, BClong, VCHoya, v;
-            CE = 196.90;
-            No = 548.90;
-            Nobc = 548.90;
-            BClong = 886.60;
+            CE = 280;
+            No = 700;
+            Nobc = 700;
+            BClong = 1150;
             v = Nobc;
             VCHoya = double.Parse(VCHoyatext.Text);
             resl4 = (VCHoya - v) / 2;
@@ -242,10 +234,10 @@ namespace WindowsFormsApp1
         private void No_Click(object sender, EventArgs e)
         {
             double resl4, CE, No, Nobc, BClong, VCHoya, v;
-            CE = 196.90;
-            No = 548.90;
-            Nobc = 548.90;
-            BClong = 886.60;
+            CE = 280;
+            No = 700;
+            Nobc = 700;
+            BClong = 1150;
             v = No;
             VCHoya = double.Parse(VCHoyatext.Text);
             resl4 = (VCHoya - v) / 2;
@@ -371,19 +363,44 @@ namespace WindowsFormsApp1
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
-        {x = 1;}
+        { x = 1; }
         private void tabPage2_Click(object sender, EventArgs e)
-        { x = 2;}
+        { x = 2; }
         private void tabPage3_Click(object sender, EventArgs e)
-        { x = 3;}
+        { x = 3; }
         private void tabPage4_Click(object sender, EventArgs e)
-        { x = 4;}
- 
+        { x = 4; }
+
         private void lolazum_KeyUp(object sender, KeyEventArgs e)
-        {   if (x == 1) { if (e.KeyCode == Keys.Enter) Calcular_Click(sender, e); }
-            if (x == 2) { if (e.KeyCode == Keys.Enter) button7_Click(sender, e); }
-            if (x == 3) { if (e.KeyCode == Keys.Enter) Hoyacalc(sender, e); }
-            if (x == 4) { if (e.KeyCode == Keys.Enter) Essilorcalc(sender, e); }
+        {
+            if (x == 1)
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    Calcular_Click(sender, e);
+                }
+            }
+            if (x == 2)
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    button7_Click(sender, e);
+                }
+            }
+            if (x == 3)
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    Hoyacalc(sender, e);
+                }
+            }
+            if (x == 4)
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    Essilorcalc(sender, e);
+                }
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -406,6 +423,15 @@ namespace WindowsFormsApp1
             x = 4;
         }
 
+        private void alterarPreçosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Painel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-    
+
